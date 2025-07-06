@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #38d11a, #e2e22d);
-  color: #333;
+  background: linear-gradient(to right, #f5f7fa, #dbe2ef);
+  color: #222;
+
 }
 
 a {
@@ -13,8 +14,8 @@ a {
 
 /* Header */
 header {
-  background: linear-gradient(to right, #38d11a, #e2e22d);
-  color: rgb(225, 17, 17);
+  background: linear-gradient(to right, #3f51b5, #5a55ae); /* Deep indigo gradient */
+  color: #ffffff;
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -31,14 +32,60 @@ header p {
   font-weight: 400;
 }
 
+.back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 1rem;
+      background: linear-gradient(to right, #3f51b5, #5a55ae);
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+}
+
+.back-button:hover {
+      background: linear-gradient(to right, #5a55ae, #3f51b5);
+      border-color: #ff4081;
+      color: #ff4081;
+      transform: translateY(-2px);
+}
+
+.play-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #3f51b5, #5a55ae);
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background: linear-gradient(to right, #5a55ae, #3f51b5);
+  border-color: #ff4081;
+  color: #ff4081;
+  transform: translateY(-2px);
+}
+
+
 nav {
-  background-color: #333;
+  background-color: #3f51b5;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+nav a:hover, .dropdown-content a:hover {
+  color: #ff4081;
+}
+
 
 nav a, nav .dropdown-content a {
   color: #fff;
@@ -85,11 +132,14 @@ nav a:hover, .dropdown-content a:hover {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 3rem 1rem;
+  background: linear-gradient(to right, #3f51b5, #5a55ae); /* Deep indigo gradient */
+  color: #ffffff;
 }
 
 /* Cards */
 .category-card {
-  background-color: rgb(34, 191, 222);
+  background-color: pink;
+  color: #333;
   border-radius: 16px;
   padding: 2rem;
   width: 260px;
@@ -111,14 +161,15 @@ nav a:hover, .dropdown-content a:hover {
 
 .category-card p {
   font-size: 1rem;
-  color: #555;
+  color: #666;
 }
+
+
 
 /* Footer */
 
 footer {
-  background: linear-gradient(to right, #38d11a, #e2e22d);
-  color: #fefefe;
+  background: linear-gradient(to right, #3f51b5, #5a55ae);
   padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
@@ -138,8 +189,9 @@ footer {
   font-size: 25px;
   text-align: center;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #f70404, #3a0501);
-  background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+  background: linear-gradient(to right, #ff4081, #a18cd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -219,6 +271,7 @@ footer {
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 4px;
+  
 }
 
 .send-message input,
@@ -238,8 +291,7 @@ footer {
 
 .send-message button {
   height: 50px;
-  background: -webkit-linear-gradient(to right, #f70404, #680202);
-  background: linear-gradient(to right,#f70404, #680202);
+  background: linear-gradient(to right, #3f51b5, #5a55ae);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -292,6 +344,7 @@ footer {
 
 .social a:hover i {
   transform: translateY(-8px);
+  color: #555;
 }
 
 .social a {
@@ -299,7 +352,7 @@ footer {
 }
 
 .social a.user:hover {
-  color: #4af3b5;
+  color: #6dd5ed;
 }
 
 .social a.message:hover {
@@ -307,10 +360,10 @@ footer {
 }
 
 .social a.linkedin:hover {
-  color: #0a66c2;
+  color: #0077b5;
 }
 
 .social a.github:hover {
-  color: #181717;
+  color: #24292e;
 }
 
