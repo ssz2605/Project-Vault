@@ -21,5 +21,12 @@
       <p>Classic snake game implemented in HTML5 canvas.</p>
       <a href="../../Games/Snake_Game/index.html" class="play-button" target="_blank">Play Now</a>
   </main>
+  <script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
 </body>
 </html>
