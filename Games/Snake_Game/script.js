@@ -32,6 +32,11 @@ let yVelocity = 0;
 let score = 0;
 
 let gulpSound = new Audio("gulp.mp3");
+// Game Over overlay buttons
+const overlay = document.getElementById("gameOverOverlay");
+const restartBtn = document.getElementById("restartBtn");
+const exitBtn = document.getElementById("exitBtn");
+
 
 //game loop
 function drawGame() {
@@ -89,26 +94,8 @@ function isGameOver() {
   }
 
   if (gameOver) {
-    ctx.fillStyle = "white";
-    ctx.font = "50px Verdana";
-
-    if (gameOver) {
-      ctx.fillStyle = "white";
-      ctx.font = "50px Verdana";
-
-      var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-      gradient.addColorStop("0", " magenta");
-      gradient.addColorStop("0.5", "blue");
-      gradient.addColorStop("1.0", "red");
-      // Fill with gradient
-      ctx.fillStyle = gradient;
-
-      ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
-    }
-
-    ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
-  }
-
+  overlay.classList.remove("hidden"); // Show Game Over overlay
+}
   return gameOver;
 
 }
@@ -196,4 +183,13 @@ function keyDown(event) {
   }
 }
 
-drawGame();
+drawGame()
+// Handle Restart and Exit button actions
+restartBtn.addEventListener("click", () => {
+  location.reload(); // Restart the game
+});
+
+exitBtn.addEventListener("click", () => {
+  window.location.href = "../../index.html";  // Updated path
+});
+;
