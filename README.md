@@ -41,9 +41,8 @@ Frameworks/Libraries: None (Pure frontend)
 Deployment: GitHub Pages (or your preferred static host)
 
 📂 Folder Structure
-bash
-Copy
-Edit
+```bash
+
 Project-Vault/
 ├── index.html              # Main homepage
 ├── css/
@@ -64,7 +63,7 @@ Web: Portfolio websites, To-do apps, E-commerce UI
 ML: Prediction models, Recommendation systems
 
 Games: 2D games, JavaScript mini-games
-
+```
 ---
 
 ## 🧑‍💻 Contribution Guide
