@@ -294,11 +294,18 @@ footer {
   background: linear-gradient(to right, #3f51b5, #5a55ae);
   color: white;
   padding: 10px 20px;
-  border: none;
+  border: 2 solid black;
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
+  transition: all 0.3s ease-in-out; 
+}
+
+.send-message button:hover {
+  background: linear-gradient(to right, #5a55ae, #3f51b5); 
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .social {
