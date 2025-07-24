@@ -19,6 +19,7 @@ header {
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }
 
 header h1 {
@@ -74,24 +75,38 @@ header p {
 
 
 nav {
-  background-color: #3f51b5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(63, 81, 181, 0.4);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-nav a:hover, .dropdown-content a:hover {
-  color: #ff4081;
-}
 
-
-nav a, nav .dropdown-content a {
+nav a,
+nav .dropdown-content a {
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+.dropdown-content a:hover {
+  color: #ff4081;
 }
 
 .nav-left {
