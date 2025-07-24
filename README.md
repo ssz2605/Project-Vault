@@ -82,7 +82,10 @@ We welcome new project submissions! Here's how you can contribute:
 
 ## Contributors
 
-![Contributors](https://opencollective.com/Project_Vault/contributors.svg?button=false&avatarHeight=40&width=1000)
+Thanks to these amazing people:
+
+![Contributors](https://contrib.rocks/image?repo=pavitraag/Project-Vault)
+
 
 ---
 
