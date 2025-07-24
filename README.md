@@ -124,7 +124,6 @@ Thanks to these amazing people:
 
 ![Contributors](https://contrib.rocks/image?repo=pavitraag/Project-Vault)
 
-
 ---
 
 ## 💡 Suggestions & Feedback
