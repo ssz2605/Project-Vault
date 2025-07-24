@@ -15,7 +15,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 #  2. Load Dataset
-df = pd.read_csv("anemia_dataset.csv")  # Replace with actual path
+df = pd.read_csv("anemia_dataset.csv")  # add your file
 
 #  3. Data Cleaning & Preprocessing
 df.drop(columns=["Number", "Name"], inplace=True)
@@ -41,10 +41,11 @@ plt.title("Class Distribution")
 plt.xticks([0, 1], ['No', 'Yes'])
 plt.show()
 
-# Correlation heatmap
+# Correlation heatmap (only numeric columns)
 plt.figure(figsize=(8, 6))
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
-plt.title("Feature Correlation")
+df_numeric = df.select_dtypes(include=['number'])
+sns.heatmap(df_numeric.corr(), annot=True, cmap='coolwarm')
+plt.title("Correlation Heatmap (Numeric Features)")
 plt.show()
 
 # 🧪 5. Train-Test Split
