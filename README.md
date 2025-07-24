@@ -71,7 +71,7 @@ Follow these steps to contribute your changes to **Project Vault**:
 
 ---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
 
 Frameworks/Libraries: None (Pure frontend)
@@ -102,15 +102,6 @@ Web: Portfolio websites, To-do apps, E-commerce UI
 ML: Prediction models, Recommendation systems
 
 Games: 2D games, JavaScript mini-games
-
----
-
-## 🧑‍💻 Contribution Guide
-We welcome new project submissions! Here's how you can contribute:
-
-1. Fork the repo
-2. Add your project under the appropriate category file (with title, short description, and GitHub link)
-3. Submit a pull request
 
 ---
 ## Badges
