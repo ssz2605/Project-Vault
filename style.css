@@ -591,6 +591,28 @@ footer::before {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
+.nav-link.active,
+.footer-ul li a.active,
+.mobile-menu-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #feca57 !important;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-link.active::after,
+.footer-ul li a.active::after,
+.mobile-menu-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 3px;
+  background: linear-gradient(90deg, #feca57, #ff6b6b);
+  border-radius: 2px;
+}
 @media (max-width: 968px) and (min-width: 481px) {
   .nav-right {
     display: flex;

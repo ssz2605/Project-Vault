@@ -97,3 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
     currentYearElement.textContent = new Date().getFullYear();
   }
 });
+const currentPath = window.location.pathname.split("/").pop();
+
+// Navbar
+document
+  .querySelectorAll(".nav-link, .mobile-menu-link, .footer-ul li a")
+  .forEach((link) => {
+    if (link.getAttribute("href").includes(currentPath)) {
+      link.classList.add("active");
+    }
+  });
