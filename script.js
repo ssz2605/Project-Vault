@@ -106,4 +106,11 @@ document
     if (link.getAttribute("href").includes(currentPath)) {
       link.classList.add("active");
     }
+    // Highlight dropdown 'Components' if any of its child pages is active
+    const componentPages = ["website.html", "games.html", "ml.html"];
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+    if (componentPages.includes(currentPath) && dropdownToggle) {
+      dropdownToggle.classList.add("active");
+    }
   });

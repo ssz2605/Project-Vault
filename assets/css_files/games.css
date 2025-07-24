@@ -232,22 +232,6 @@ main {
   content: '🐍'; /* Snake game */
 }
 
-.category-card:nth-child(3) h3::before {
-  content: '🕹️'; /* Generic game controller */
-}
-
-.category-card:nth-child(4) h3::before {
-  content: '🎯'; /* Target/shooting games */
-}
-
-.category-card:nth-child(5) h3::before {
-  content: '🎲'; /* Dice/chance games */
-}
-
-.category-card:nth-child(6) h3::before {
-  content: '🏆'; /* Competition games */
-}
-
 /* Animations */
 @keyframes slideInUp {
   from {
