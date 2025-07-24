@@ -57,26 +57,38 @@ Project-Vault/
 │   ├── ml.html             # Machine Learning projects
 │   └── games.html          # Game projects
 └── README.md
-📌 Example Projects Listed
+
+## 📌 Example Projects Listed
 Web: Portfolio websites, To-do apps, E-commerce UI
 
 ML: Prediction models, Recommendation systems
 
 Games: 2D games, JavaScript mini-games
 
-🧑‍💻 Contribution Guide
+---
+
+## 🧑‍💻 Contribution Guide
 We welcome new project submissions! Here's how you can contribute:
 
 1. Fork the repo
 2. Add your project under the appropriate category file (with title, short description, and GitHub link)
 3. Submit a pull request
 
-📄 License
-This project is open-sourced under the MIT License. See the LICENSE file for more details.
+---
 
-👩‍💻 Maintained By
+## 👩‍💻 Maintained By
 Pavitraa G
 
-💡 Suggestions & Feedback
+---
+
+## 💡 Suggestions & Feedback
 Feel free to open issues or discussions if you have any feedback, feature suggestions, or want to collaborate!
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
 
