@@ -25,6 +25,19 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+/* Header */
+header {
+  background: linear-gradient(to right, #3f51b5, #5a55ae); /* Deep indigo gradient */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 .nav-container {
@@ -193,6 +206,26 @@ nav {
 
 .arrow-icon {
   transition: transform 0.3s ease;
+  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(63, 81, 181, 0.4);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .submenu-items {
@@ -201,6 +234,7 @@ nav {
   padding-left: 1rem;
   margin-top: 0.5rem;
 }
+
 
 .mobile-submenu.open .submenu-items {
   display: flex;
@@ -212,6 +246,18 @@ nav {
 
 .mobile-menu.active {
   left: 0;
+nav a,
+nav .dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+.dropdown-content a:hover {
+  color: #ff4081;
 }
 
 .mobile-menu-header {
@@ -528,6 +574,22 @@ footer::before {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   transition: left 0.5s;
+  height: 50px;
+  background: linear-gradient(to right, #3f51b5, #5a55ae);
+  color: white;
+  padding: 10px 20px;
+  border: 2 solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out; 
+}
+
+.send-message button:hover {
+  background: linear-gradient(to right, #5a55ae, #3f51b5); 
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .send-message button:hover::before {
