@@ -122,18 +122,25 @@ function change(x) {
     }
     
     //If all pairs are matched
-    if (rem==0) {
-          clearInterval(time);
-          if (min==0) {
-              time = `${sec} seconds`;
-          }
-          else {
-              time = `${min} minute(s) and ${sec} second(s)`;
-          }
-          setTimeout(function() {
-              $("#ol").html(`<center><div id="iol"><h2>Congrats!</h2><p style="font-size:23px;padding:10px;">You completed the ${mode} mode in ${moves} moves. It took you ${time}.</p><p style="font-size:18px">Comment Your Score!<br/>Play Again ?</p><button onclick="start(3, 4)">3 x 4</button> <button onclick="start(4, 4)" style="w">4 x 4</button><button onclick="start(4, 5)">4 x 5</button><button onclick="start(5, 6)">5 x 6</button><button onclick="start(6, 6)">6 x 6</button></div></center>`);
-              $("#ol").fadeIn(750);
-          }, 1500);
-    }
+   if (rem === 0) {
+    clearInterval(time);
+    let finalTime = min === 0 ? `${sec} seconds` : `${min} minute(s) and ${sec} second(s)`;
+    document.getElementById("finalStats").innerText =
+      `You completed the ${mode} mode in ${moves} moves. It took you ${finalTime}.`;
+
+  setTimeout(() => {
+    document.getElementById("gameWinOverlay").classList.remove("hidden");
+  }, 500);
   }
+ }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("exitBtn").addEventListener("click", () => {
+  window.location.href = "../../index.html"; // or whatever path is correct
+  });
+  document.getElementById("restartBtn").addEventListener("click", () => {
+    location.reload();
+  });
+});
+
