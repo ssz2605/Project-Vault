@@ -1,5 +1,7 @@
 # 🔐 Project Vault
 
+![GSSoC Logo](https://raw.githubusercontent.com/pavitraag/Project-Vault/main/assets/gssoc.png)
+
 **Project Vault** is a curated website that showcases a collection of categorized tech projects across multiple domains such as Web Development, Machine Learning, Games, and more. Whether you're a beginner looking for inspiration or a developer seeking reference projects, Project Vault is your one-stop solution.
 
 🌐 Visit the website to explore real-world projects, filter by tech stack, and discover new ideas!
