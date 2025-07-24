@@ -56,6 +56,7 @@ Project-Vault/
 │   ├── ml.html             # Machine Learning projects
 │   └── games.html          # Game projects
 └── README.md
+```
 
 ## 📌 Example Projects Listed
 Web: Portfolio websites, To-do apps, E-commerce UI
@@ -63,7 +64,7 @@ Web: Portfolio websites, To-do apps, E-commerce UI
 ML: Prediction models, Recommendation systems
 
 Games: 2D games, JavaScript mini-games
-```
+
 ---
 
 ## 🧑‍💻 Contribution Guide
