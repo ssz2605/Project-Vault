@@ -75,9 +75,14 @@ We welcome new project submissions! Here's how you can contribute:
 3. Submit a pull request
 
 ---
+## Badges
 
-## 👩‍💻 Maintained By
-Pavitraa G
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pavitraag/Project-Vault) ![GitHub Org's stars](https://img.shields.io/github/stars/pavitraag%2F/Project-Vault) ![GitHub License](https://img.shields.io/github/license/pavitraag/Project-Vault) ![GitHub forks](https://img.shields.io/github/forks/pavitraag/Project-Vault) ![GitHub watchers](https://img.shields.io/github/watchers/pavitraag/Project-Vault) 
+---
+
+## Contributors
+
+![Contributors](https://opencollective.com/Project_Vault/contributors.svg?button=false&avatarHeight=40&width=1000)
 
 ---
 
