@@ -11,7 +11,7 @@ This repository contains a fake news classification system that uses a dataset o
 ---
 
 ## Dataset
-The dataset used in this project is loaded from data folder (fake.csv, true.csv), downloaded from Kaggle - https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset and contains information about various news articles, including:
+The dataset used in this project is loaded from data folder (fake.csv, true.csv), downloaded from Kaggle - [Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) and contains information about various news articles, including:
 
 - title: Title of the news article
 - subject: Subject of the news article
