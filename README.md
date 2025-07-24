@@ -77,7 +77,7 @@ We welcome new project submissions! Here's how you can contribute:
 ---
 ## Badges
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pavitraag/Project-Vault) ![GitHub Org's stars](https://img.shields.io/github/stars/pavitraag%2F/Project-Vault) ![GitHub License](https://img.shields.io/github/license/pavitraag/Project-Vault) ![GitHub forks](https://img.shields.io/github/forks/pavitraag/Project-Vault) ![GitHub watchers](https://img.shields.io/github/watchers/pavitraag/Project-Vault) 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pavitraag/Project-Vault) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pavitraag/Project-Vault) ![GitHub Org's stars](https://img.shields.io/github/stars/pavitraag%2FProject-Vault) ![GitHub License](https://img.shields.io/github/license/pavitraag/Project-Vault) ![GitHub forks](https://img.shields.io/github/forks/pavitraag/Project-Vault) ![GitHub watchers](https://img.shields.io/github/watchers/pavitraag/Project-Vault) 
 ---
 
 ## Contributors
