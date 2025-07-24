@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #3f51b5, #5a55e5);
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .faq-question {
+      background-color: pink; 
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+      margin-top: 0;
+      background-color: rgb(244, 209, 215); 
+      padding: 0 1rem;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 0.5rem;
+      padding: 1rem;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .icon {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="max-w-2xl mx-auto">
+    <h1 class="text-white text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h1>
+    
+    <section id="faq-container" class="space-y-4">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What is Project Vault?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Project Vault is a curated platform that showcases categorized tech projects across various domains including Web Development, Machine Learning, Game Development, and more.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Who is Project Vault for?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Project Vault is ideal for both beginners looking for project inspiration and experienced developers searching for reference code or collaboration opportunities.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What kind of projects are featured?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          The platform includes real-world projects from domains like Web Development, Machine Learning, Games, Mobile Apps, DevOps, and Open Source Contributions.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Can I contribute my own projects?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Yes! Developers can submit their projects using the "Submit Project" form. Submissions are reviewed before being listed on the platform.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How are projects categorized?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Projects are categorized by domain, tech stack, and difficulty level. Users can filter projects based on their preferences and learning goals.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Are there beginner-friendly projects?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! Project Vault features beginner, intermediate, and advanced projects to suit learners at every stage.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do the projects include source code?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Yes, most listed projects provide direct links to their GitHub repositories or other open-source sources for easy access and exploration.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How frequently is Project Vault updated?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Project Vault is regularly updated with new project submissions, ensuring a fresh and diverse collection for all users.
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
