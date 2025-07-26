@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSubmenu = document.querySelector(".mobile-submenu");
 
   function toggleMobileMenu() {
+    if (!mobileMenu || !mobileMenuToggle) return;
     mobileMenu.classList.toggle("active");
-
     const spans = mobileMenuToggle.querySelectorAll("span");
+    if (spans.length < 3) return;
     if (mobileMenu.classList.contains("active")) {
       spans[0].style.transform = "rotate(45deg) translate(5px, 5px)";
       spans[1].style.opacity = "0";
@@ -23,8 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function closeMobileMenu() {
+    if (!mobileMenu || !mobileMenuToggle) return;
     mobileMenu.classList.remove("active");
     const spans = mobileMenuToggle.querySelectorAll("span");
+    if (spans.length < 3) return;
     spans[0].style.transform = "none";
     spans[1].style.opacity = "1";
     spans[2].style.transform = "none";
@@ -38,9 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenuClose.addEventListener("click", closeMobileMenu);
   }
 
-  mobileMenuLinks.forEach((link) => {
-    link.addEventListener("click", closeMobileMenu);
-  });
+  if (mobileMenuLinks && mobileMenuLinks.length > 0) {
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+  }
 
   if (submenuToggle && mobileSubmenu) {
     submenuToggle.addEventListener("click", (e) => {
@@ -51,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("click", (e) => {
     if (
+      mobileMenu &&
+      mobileMenuToggle &&
       mobileMenu.classList.contains("active") &&
       !mobileMenu.contains(e.target) &&
       !mobileMenuToggle.contains(e.target)
@@ -59,9 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  mobileMenu.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
+  if (mobileMenu) {
+    mobileMenu.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  }
 
   // --- Contact Form Handling ---
   const contactForm = document.getElementById("contact-form");
@@ -71,8 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const formData = new FormData(this);
       const button = this.querySelector('button[type="submit"]');
+      if (!button) return;
       const buttonText = button.querySelector(".button-text");
       const loading = button.querySelector(".loading");
+      if (!buttonText || !loading) return;
 
       // Show loading state
       buttonText.style.display = "none";
@@ -96,21 +107,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
   }
+
+  // Navbar Highlighting
+  const currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link, .mobile-menu-link, .footer-ul li a");
+  if (navLinks && navLinks.length > 0) {
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href && href.includes(currentPath)) {
+        link.classList.add("active");
+      }
+      // Highlight dropdown 'Components' if any of its child pages is active
+      const componentPages = ["website.html", "games.html", "ml.html"];
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      if (componentPages.includes(currentPath) && dropdownToggle) {
+        dropdownToggle.classList.add("active");
+      }
+    });
+  }
 });
-const currentPath = window.location.pathname.split("/").pop();
-
-// Navbar
-document
-  .querySelectorAll(".nav-link, .mobile-menu-link, .footer-ul li a")
-  .forEach((link) => {
-    if (link.getAttribute("href").includes(currentPath)) {
-      link.classList.add("active");
-    }
-    // Highlight dropdown 'Components' if any of its child pages is active
-    const componentPages = ["website.html", "games.html", "ml.html"];
-    const dropdownToggle = document.querySelector(".dropdown-toggle");
-
-    if (componentPages.includes(currentPath) && dropdownToggle) {
-      dropdownToggle.classList.add("active");
-    }
-  });
