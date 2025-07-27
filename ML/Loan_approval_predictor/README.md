@@ -2,6 +2,8 @@
 This project predicts whether a bank loan application should be **approved** or **rejected**, using machine learning models trained on customer data.  
 It is designed as an end-to-end ML pipeline: data cleaning → preprocessing → modeling → evaluation → visualization.
 
+## **DEMO Screenshots**
+![demo]()
 ---
  ## **Project Overview**
   - **Goal:** Predict loan approval (1) or rejection (0)
