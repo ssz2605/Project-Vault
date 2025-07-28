@@ -194,7 +194,7 @@ def dashboard():
     if 'user_id' not in session:
         flash("Login required.", "warning")
         return redirect(url_for('login'))
-    return "✅ Logged in with Face! Welcome to your dashboard."
+    return render_template("dashboard.html")
 
 @app.route('/logout')
 def logout():
