@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     e.stopPropagation();
   });
 
+
+
+
   // --- Contact Form Handling ---
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
@@ -90,6 +93,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   }
+const NUM_TRAILS = 30;
+const snakeDots = [];
+
+for (let i = 0; i < NUM_TRAILS; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("snake-dot");
+  document.body.appendChild(dot);
+  snakeDots.push({
+    el: dot,
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+    scale: 1 - i * 0.02,
+    opacity: 1 - i * 0.02
+  });
+}
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animateSnakeCursor() {
+  let x = mouseX;
+  let y = mouseY;
+
+  snakeDots.forEach((dot, i) => {
+    const next = snakeDots[i + 1] || { x, y };
+
+    // Faster follow speed
+    dot.x += (x - dot.x) * 0.35;
+    dot.y += (y - dot.y) * 0.35;
+
+    dot.el.style.left = `${dot.x}px`;
+    dot.el.style.top = `${dot.y}px`;
+    dot.el.style.transform = `translate(-50%, -50%) scale(${dot.scale})`;
+    dot.el.style.opacity = dot.opacity;
+
+    x = dot.x;
+    y = dot.y;
+  });
+
+  requestAnimationFrame(animateSnakeCursor);
+}
+
+animateSnakeCursor();
+
 
   // --- Set Current Year ---
   const currentYearElement = document.getElementById("currentYear");
