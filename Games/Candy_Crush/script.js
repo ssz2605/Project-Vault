@@ -216,14 +216,18 @@ class CandyCrush {
     async trySwap(row1, col1, row2, col2) {
         if (this.isSwapping || this.moves <= 0) return;
         this.isSwapping = true;
+        
+        // Decrement moves for every swap attempt
+        this.moves--;
+        this.movesElement.textContent = this.moves;
+        
         // Swap in the board array
         [this.board[row1][col1], this.board[row2][col2]] = [this.board[row2][col2], this.board[row1][col1]];
         this.renderBoard();
+        
         // Check for matches
         let matches = this.findMatches();
         if (matches.length > 0) {
-            this.moves--;
-            this.movesElement.textContent = this.moves;
             await this.handleMatchesAndCascades();
         } else {
             // Swap back if no matches
@@ -231,6 +235,7 @@ class CandyCrush {
             [this.board[row1][col1], this.board[row2][col2]] = [this.board[row2][col2], this.board[row1][col1]];
             this.renderBoard();
         }
+        
         this.isSwapping = false;
         if (this.moves <= 0) {
             setTimeout(() => {
