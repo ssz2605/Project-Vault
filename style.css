@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -41,11 +40,11 @@ header h1 {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 30px ;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 500px;
 }
 
 .nav-logo {
@@ -247,6 +246,7 @@ nav {
 
 .mobile-menu.active {
   left: 0;
+}
 nav a,
 nav .dropdown-content a {
   color: #fff;
@@ -676,6 +676,27 @@ footer::before {
   background: linear-gradient(90deg, #feca57, #ff6b6b);
   border-radius: 2px;
 }
+/* Cursor dot with gradient */
+/* Snake Cursor Dots */
+.snake-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, #a18cd1 0%, #6f00ff 60%, #3a0ca3 100%);
+  box-shadow:
+    0 0 6px rgba(161, 140, 209, 0.8),
+    0 0 12px rgba(111, 0, 255, 0.6),
+    0 0 20px rgba(58, 12, 163, 0.3);
+  filter: blur(1px);
+  opacity: 0.85;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+
 @media (max-width: 968px) and (min-width: 481px) {
   .nav-right {
     display: flex;
