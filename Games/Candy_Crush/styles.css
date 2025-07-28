@@ -186,6 +186,10 @@ body {
     user-select: none;
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    background-image: 
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    background-size: 60% 60%, 100% 100%;
 }
 
 .candy::before {
@@ -195,7 +199,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.6) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.4) 0%, transparent 40%);
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -208,7 +214,7 @@ body {
     left: 15%;
     width: 20%;
     height: 20%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 70%);
     border-radius: 50%;
     opacity: 0.7;
 }
@@ -220,67 +226,73 @@ body {
 /* Candy Colors with Enhanced Candy Effects */
 .candy.red {
     background: 
-        radial-gradient(circle at 30% 30%, #ff8a8a 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #ff6b6b 0%, transparent 50%),
-        linear-gradient(135deg, #ff6b6b 0%, #ee5a52 50%, #ff4757 100%);
+        radial-gradient(circle at 25% 25%, #ff9a9a 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #ff6b6b 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #ff4757 0%, transparent 60%),
+        linear-gradient(135deg, #ff6b6b 0%, #ee5a52 30%, #ff4757 70%, #ff3742 100%);
     box-shadow: 
-        0 4px 8px rgba(255, 107, 107, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(255, 107, 107, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .candy.blue {
     background: 
-        radial-gradient(circle at 30% 30%, #74b9ff 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #4ecdc4 0%, transparent 50%),
-        linear-gradient(135deg, #4ecdc4 0%, #44a08d 50%, #0984e3 100%);
+        radial-gradient(circle at 25% 25%, #74b9ff 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #4ecdc4 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #0984e3 0%, transparent 60%),
+        linear-gradient(135deg, #4ecdc4 0%, #44a08d 30%, #0984e3 70%, #00a8ff 100%);
     box-shadow: 
-        0 4px 8px rgba(78, 205, 196, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(78, 205, 196, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .candy.green {
     background: 
-        radial-gradient(circle at 30% 30%, #a8e6cf 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #88d8c0 0%, transparent 50%),
-        linear-gradient(135deg, #a8e6cf 0%, #88d8c0 50%, #00b894 100%);
+        radial-gradient(circle at 25% 25%, #a8e6cf 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #88d8c0 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #00b894 0%, transparent 60%),
+        linear-gradient(135deg, #a8e6cf 0%, #88d8c0 30%, #00b894 70%, #00cec9 100%);
     box-shadow: 
-        0 4px 8px rgba(168, 230, 207, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(168, 230, 207, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .candy.yellow {
     background: 
-        radial-gradient(circle at 30% 30%, #ffeaa7 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #ffd93d 0%, transparent 50%),
-        linear-gradient(135deg, #ffd93d 0%, #ffb347 50%, #fdcb6e 100%);
+        radial-gradient(circle at 25% 25%, #ffeaa7 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #ffd93d 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #fdcb6e 0%, transparent 60%),
+        linear-gradient(135deg, #ffd93d 0%, #ffb347 30%, #fdcb6e 70%, #ffa502 100%);
     box-shadow: 
-        0 4px 8px rgba(255, 217, 61, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(255, 217, 61, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .candy.purple {
     background: 
-        radial-gradient(circle at 30% 30%, #e056fd 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #d4a5ff 0%, transparent 50%),
-        linear-gradient(135deg, #d4a5ff 0%, #b19cd9 50%, #a29bfe 100%);
+        radial-gradient(circle at 25% 25%, #e056fd 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #d4a5ff 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #a29bfe 0%, transparent 60%),
+        linear-gradient(135deg, #d4a5ff 0%, #b19cd9 30%, #a29bfe 70%, #6c5ce7 100%);
     box-shadow: 
-        0 4px 8px rgba(212, 165, 255, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(212, 165, 255, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .candy.orange {
     background: 
-        radial-gradient(circle at 30% 30%, #ffa726 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, #ff9a56 0%, transparent 50%),
-        linear-gradient(135deg, #ff9a56 0%, #ff7f50 50%, #ff7043 100%);
+        radial-gradient(circle at 25% 25%, #ffa726 0%, transparent 40%),
+        radial-gradient(circle at 75% 75%, #ff9a56 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #ff7043 0%, transparent 60%),
+        linear-gradient(135deg, #ff9a56 0%, #ff7f50 30%, #ff7043 70%, #ff5722 100%);
     box-shadow: 
-        0 4px 8px rgba(255, 154, 86, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(255, 154, 86, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
         inset 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -288,54 +300,60 @@ body {
 .candy.striped {
     background: 
         linear-gradient(45deg, 
-            rgba(255, 255, 255, 0.4) 25%, 
+            rgba(255, 255, 255, 0.5) 25%, 
             transparent 25%, 
             transparent 50%, 
-            rgba(255, 255, 255, 0.4) 50%, 
-            rgba(255, 255, 255, 0.4) 75%, 
+            rgba(255, 255, 255, 0.5) 50%, 
+            rgba(255, 255, 255, 0.5) 75%, 
             transparent 75%, 
             transparent),
-        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6) 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.6) 0%, transparent 50%);
-    background-size: 20px 20px, 60% 60%, 100% 100%;
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+    background-size: 20px 20px, 60% 60%, 100% 100%, 80% 80%;
     animation: striped-animation 1.5s linear infinite;
     box-shadow: 
-        0 6px 12px rgba(255, 255, 255, 0.3),
-        inset 0 2px 4px rgba(255, 255, 255, 0.6),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+        0 6px 12px rgba(255, 255, 255, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.7),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .candy.wrapped {
     background: 
-        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-        radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
-    background-size: 60% 60%, 100% 100%, 80% 80%;
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 1) 0%, transparent 50%),
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.8) 0%, transparent 40%);
+    background-size: 60% 60%, 100% 100%, 80% 80%, 40% 40%;
     animation: wrapped-animation 2.5s ease-in-out infinite;
     box-shadow: 
-        0 8px 16px rgba(255, 255, 255, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.7),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+        0 8px 16px rgba(255, 255, 255, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.8),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.4);
 }
 
 /* Enhanced Candy States */
 .candy:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.15) rotate(5deg);
     box-shadow: 
         0 8px 16px rgba(0, 0, 0, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.6),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+        inset 0 2px 4px rgba(255, 255, 255, 0.7),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .candy.selected {
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.25) rotate(8deg);
     box-shadow: 
-        0 0 25px rgba(255, 255, 255, 0.9),
-        0 0 50px rgba(255, 255, 255, 0.5),
-        0 0 75px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.9),
+        0 0 60px rgba(255, 255, 255, 0.6),
+        0 0 90px rgba(255, 255, 255, 0.3),
         inset 0 2px 4px rgba(255, 255, 255, 0.8),
         inset 0 -2px 4px rgba(0, 0, 0, 0.4);
     z-index: 10;
+    animation: candy-pulse 0.6s ease-in-out infinite alternate;
 }
 
 .candy.matched {
@@ -375,6 +393,23 @@ body {
     0% { transform: scale(1) rotate(0deg); }
     50% { transform: scale(1.1) rotate(10deg); }
     100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes candy-pulse {
+    0% { 
+        transform: scale(1.25) rotate(8deg);
+        box-shadow: 
+            0 0 30px rgba(255, 255, 255, 0.9),
+            0 0 60px rgba(255, 255, 255, 0.6),
+            0 0 90px rgba(255, 255, 255, 0.3);
+    }
+    100% { 
+        transform: scale(1.3) rotate(8deg);
+        box-shadow: 
+            0 0 40px rgba(255, 255, 255, 1),
+            0 0 80px rgba(255, 255, 255, 0.8),
+            0 0 120px rgba(255, 255, 255, 0.5);
+    }
 }
 
 /* Instructions Styling */
