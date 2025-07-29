@@ -464,6 +464,7 @@ footer::before {
 }
 
 .company-info p {
+  text-align: Justify;
   line-height: 1.8;
   opacity: 0.9;
   font-size: 0.95rem;
