@@ -14,14 +14,23 @@
     />
     <link rel="stylesheet" href="../../style.css" />
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+      }
       .contact-section {
         background: #ffffff;
         padding: 4rem 1rem;
         border-radius: 16px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         max-width: 900px;
-        margin: 4rem auto;
+        margin: 6rem auto 4rem auto; /* Top margin increased to avoid nav overlap */
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+
 
       .contact-container {
         max-width: 720px;
