@@ -121,16 +121,18 @@ function startTimer() {
 function endGame() {
   clearInterval(timerInterval);
   inputEl.blur();
-  
-  // Show completion message
+
   const timeElapsed = (Date.now() - startTime) / 1000;
   const wpm = Math.round(((charIndex - mistakes) / 5) / (timeElapsed / 60));
   const accuracy = Math.round(((charIndex - mistakes) / charIndex) * 100) || 0;
-  
+
   setTimeout(() => {
     alert(`Game Over!\nLevel: ${levelNames[currentLevel]}\nWPM: ${wpm}\nAccuracy: ${accuracy}%\nTime: ${Math.round(timeElapsed)}s`);
+
+    initGame(); 
   }, 100);
 }
+
 
 inputEl.addEventListener('input', (e) => {
   if (!isTyping) {
