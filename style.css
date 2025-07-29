@@ -212,7 +212,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
 
   background: rgba(63, 81, 181, 0.4);
   padding: 1rem;
