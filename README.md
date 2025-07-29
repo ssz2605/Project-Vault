@@ -29,11 +29,6 @@
 - CSS3
 - JavaScript
 
-## 📸 Screenshots(Have a look what we have for you)
-
-### 🏠 Homepage
-![Homepage](./assets/screenshots/projectvault.jpg)
-
 
 
 ## 📥 Submitting a Pull Request
