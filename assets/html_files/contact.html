@@ -21,6 +21,7 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         max-width: 900px;
         margin: 4rem auto;
+   margin-top: 150px;
       }
 
       .contact-container {
@@ -214,6 +215,7 @@
               name="name"
               placeholder="Your name"
               autocomplete="name"
+              minlength="3"
               required
               class="contact-input"
             />
@@ -231,11 +233,12 @@
             id="message"
             name="message"
             placeholder="Your message"
+            minlength="10"
             required
             class="contact-textarea"
           ></textarea>
           <button type="submit" class="contact-button" id="submitBtn">
-            <span class="button-text">Send Message</span>
+         <span class="button-text">Send Message</span>
             <span class="spinner hidden" id="spinner"></span>
           </button>
         </form>
@@ -247,29 +250,31 @@
       Reserved
     </footer>
     <script src="../../script.js"></script>
-    <script>
-      function handleFormSubmit(event) {
-        event.preventDefault();
+<script>
+  function handleFormSubmit(event) {
+    event.preventDefault();
 
-        const btn = document.getElementById("submitBtn");
-        const spinner = document.getElementById("spinner");
-        const form = document.getElementById("contact-form");
+    const btn = document.getElementById("submitBtn");
+    const originalHTML = btn.innerHTML; // Save original button content
+    const form = document.getElementById("contact-form");
 
-        // Disable button & show spinner
-        btn.disabled = true;
-        spinner.classList.remove("hidden");
+    // Replace button content with spinner
+    btn.innerHTML = `
+      <span class="spinner" id="spinner"></span> Sending...
+    `;
+    btn.disabled = true;
 
-        // Simulate submission delay
-        setTimeout(() => {
-          // Show success alert first
-          alert("Thanks for your message! We'll get back to you soon.");
+    // Simulate submission delay
+    setTimeout(() => {
+      alert("Thanks for your message! We'll get back to you soon.");
 
-          // Then reset form and loading state
-          form.reset();
-          spinner.classList.add("hidden");
-          btn.disabled = false;
-        }, 2000); // 2 seconds delay
-      }
-    </script>
+      // Reset form and restore original button
+      form.reset();
+      btn.innerHTML = originalHTML;
+      btn.disabled = false;
+    }, 2000);
+  }
+</script>
+
   </body>
 </html>
