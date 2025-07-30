@@ -3,7 +3,9 @@ This project predicts whether a bank loan application should be **approved** or 
 It is designed as an end-to-end ML pipeline: data cleaning → preprocessing → modeling → evaluation → visualization.
 
 ## **DEMO Screenshots**
-![demo]()
+![demo](/ML/Loan_approval_predictor/images/demo1%20(1).png)
+![demo](/ML/Loan_approval_predictor/images/demo1%20(2).png)
+![demo](/ML/Loan_approval_predictor/images/demo1%20(3).png)
 ---
  ## **Project Overview**
   - **Goal:** Predict loan approval (1) or rejection (0)
@@ -26,7 +28,7 @@ It is designed as an end-to-end ML pipeline: data cleaning → preprocessing →
 - Pandas, NumPy (data analysis & cleaning)
 - Scikit-learn (modeling & evaluation)
 - Seaborn, Matplotlib (visualization)
-
+- Streamlit
 ---
 
 ## **Project Steps**
@@ -47,6 +49,3 @@ It is designed as an end-to-end ML pipeline: data cleaning → preprocessing →
 ## **Results**
  - *Accuracy is ~97% on the test set for RandomForest.
 
-## **Visulizations**
-- Countplot showing actual vs predicted approvals
-![countplot](/plots/plot.png)
