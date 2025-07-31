@@ -151,10 +151,11 @@ header h1 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 1001;
+  flex-direction: column;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
